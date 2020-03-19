@@ -12,3 +12,12 @@
 h1 {
   font-size: var(--h1-font-size);
 }
+
+nav.nav-container {
+  display: flex;
+  justify-content: space-around;
+  border: 5px solid aquamarine;
+}
+.nav-item {
+  border: 5px solid cadetblue;
+}
