@@ -1,3 +1,5 @@
-# The purpose of this repo is to practice and have some simple examples
+# The purpose of this repo is to practice
 
-# This project runs on node.js
+# This project runs on
+* nodejs
+* express
