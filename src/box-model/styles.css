@@ -1,0 +1,28 @@
+div[class*="box-"] {
+  font-size: 50px;
+}
+
+.box-one {
+  background-color: orangered;
+  padding: 20px;
+  border: 5px black solid;
+  margin: 100px;
+  /* It will be 100px, as it takes the sum of height, border and padding (both sides, top and bottom) */
+  height: 50px;
+}
+
+.box-two {
+  background-color: turquoise;
+  padding: 20px;
+  border: 5px black solid;
+  margin: 150px; /* Margin top will be 150 instead of 150 + 100. It always uses the greater number */
+}
+
+.box-three {
+  background-color: violet;
+  padding: 20px;
+  border: 5px black solid;
+  margin: 100px;
+  height: 50px;
+  box-sizing: border-box; /* This way it takes only the height */
+}

@@ -4,7 +4,7 @@
   "description": "Docs with examples",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/supervisor -k -e html,css,js -i .git/,node_modules/ -- index.js"
+    "start": "./node_modules/.bin/supervisor -k -e html,js,css -i .git/,node_modules/ -- index.js"
   },
   "repository": {
     "type": "git",
