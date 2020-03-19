@@ -16,6 +16,9 @@ app.get("/", (req, res) => {
 app.get("/box-model", (req, res) => {
   res.sendFile(path.join(__dirname + "/src/box-model/index.html"));
 });
+app.get("/flexbox", (req, res) => {
+  res.sendFile(path.join(__dirname + "/src/flexbox/index.html"));
+});
 
 // Reload code here
 reload(app)
