@@ -7,10 +7,12 @@ const reload = require("reload");
 const app = express();
 const port = 3000;
 
+app.use(express.static(path.join(__dirname, "public")));
+
 // routes
-app.get("/", (req, res) =>
-  res.sendFile(path.join(__dirname + "/src/index.html"))
-);
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + "/src/index.html"));
+});
 
 // Reload code here
 reload(app)
