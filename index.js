@@ -20,8 +20,5 @@ reload(app)
     app.listen(port, () => console.log(`App listening on port ${port}!`));
   })
   .catch(err => {
-    console.error(
-      "Reload could not start, could not start server/sample app",
-      err
-    );
+    console.error("Reload could not start, could not start server", err);
   });
