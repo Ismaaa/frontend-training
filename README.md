@@ -1,4 +1,4 @@
-# The purpose of this repo is to practice
+# The examples are located under /src/*
 
 # Running the project
 Port 80 must be free (or the app http port can be changed in the docker-compose file)
