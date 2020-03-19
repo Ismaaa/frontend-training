@@ -4,3 +4,5 @@
 * Padding for spacing element from itself
 * Margin for spacing element from another element
 * box-sizing: border-box will take only the element height and it won't perfom any sum of the padding and border
+
+![alt text](image.png "Preview")
