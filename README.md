@@ -8,4 +8,5 @@ make up
 
 # This project runs on
 * nodejs
-* express
+* express (web server)
+* reload and supervisor (hot reloading)
