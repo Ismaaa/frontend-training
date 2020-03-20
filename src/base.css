@@ -20,4 +20,6 @@ nav.nav-container {
 }
 .nav-item {
   border: 5px solid cadetblue;
+  margin: 10px;
+  width: 50%;
 }
