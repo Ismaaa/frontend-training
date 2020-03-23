@@ -33,13 +33,24 @@ nav .main-menu .menu-item.search-menu-item input {
   width: 100%;
 }
 
-.container {
+.content .container {
   display: flex;
 }
-.container .column {
+.content .container .column {
   margin: 0.5em;
   border-radius: 5%;
   background-color: #cdcdcd;
   width: 100%;
-  height: 250px;
+  height: 80vh;
+}
+
+.footer .container {
+  display: flex;
+}
+.footer .container .column {
+  margin: 0.5em;
+  border-radius: 5%;
+  background-color: #cdcdcd;
+  width: 100%;
+  height: 5em;
 }
