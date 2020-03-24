@@ -6,3 +6,20 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* So border are not being added to the total width or height */
+  box-sizing: border-box;
+}
+
+body {
+  /** Stuff related to fonts should always go inside the body */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+}
