@@ -72,8 +72,7 @@ body {
   font-weight: 400;
   letter-spacing: 35px;
   /* Animation */
-  animation-name: moveInLeft;
-  animation-duration: 1s;
+  animation: moveInLeft 1s ease-in-out;
 }
 
 .heading-primary-sub {
@@ -82,8 +81,7 @@ body {
   font-weight: 700;
   letter-spacing: 17.4px;
   /* Animation */
-  animation-name: moveInRight;
-  animation-duration: 1s;
+  animation: moveInRight 1s ease-in-out;
 }
 
 @keyframes moveInLeft {
