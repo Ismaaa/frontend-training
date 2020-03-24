@@ -23,3 +23,11 @@ body {
   line-height: 1.7;
   color: #777;
 }
+
+.header {
+  height: 95vh;
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  /* So top stays the same */
+  background-position: top;
+}
