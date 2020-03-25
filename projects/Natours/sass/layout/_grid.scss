@@ -18,10 +18,16 @@
     }
   }
 
+  /** 2 */
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
   }
 
+  .col-2-of-2 {
+    width: 100%;
+  }
+
+  /** 3 */
   .col-1-of-3 {
     // We decrease 2 times the gutter, as there are 2 gutters
     width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
@@ -32,8 +38,17 @@
     width: calc(((100% - (#{$gutter-horizontal} * 2)) / 3) * 2 + #{$gutter-horizontal});
   }
 
+  .col-3-of-3 {
+    width: 100%;
+  }
+
+  /** 4 */
   .col-1-of-4 {
     // We decrease 3 times the gutter, as there are 3 gutters
     width: calc((100% - (#{$gutter-horizontal} * 3)) / 4);
+  }
+
+  .col-4-of-4 {
+    width: 100%;
   }
 }
