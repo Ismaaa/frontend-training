@@ -8,15 +8,22 @@ Dark green: #28b485
 */
 
 /* Reset */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  /* So border are not being added to the total width or height */
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-  font-size: 10px;
+  /**
+  * The default font size on most browsers is 16px.
+  * To respect users font preference we have to use percentages.
+  * In this case, we want to use 10px as base
+  * o, to get the percentage we should do 10/16 which is = to 0.625
+  */
+  font-size: 62.5%; /* 0.625*10  */
 }
 
 body {
@@ -27,6 +34,8 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
+  /* So border are not being added to the total width or height */
+  box-sizing: border-box;
 }
 
 .header {
@@ -135,7 +144,6 @@ body {
     transform: translateY(0);
   }
 }
-
 
 .btn:link,
 .btn:visited {
