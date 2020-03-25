@@ -9,8 +9,7 @@
 
   @include clearfix;
 
-  .col-1-of-2 {
-    width: calc((100% - #{$gutter-horizontal}) / 2);
+  [class^="col-"] {
     background-color: orangered;
     float: left;
 
@@ -19,14 +18,22 @@
     }
   }
 
-  .col-1-of-3 {
-    // We decrease 2 times the gutter, as there are 2 spaces
-    width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
-    background-color: orangered;
-    float: left;
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
 
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    }
+  .col-1-of-3 {
+    // We decrease 2 times the gutter, as there are 2 gutters
+    width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+  }
+
+  .col-2-of-3 {
+    // col-1-of-3 multiplied by 2 plus the gutter
+    width: calc(((100% - (#{$gutter-horizontal} * 2)) / 3) * 2 + #{$gutter-horizontal});
+  }
+
+  .col-1-of-4 {
+    // We decrease 3 times the gutter, as there are 3 gutters
+    width: calc((100% - (#{$gutter-horizontal} * 3)) / 4);
   }
 }
