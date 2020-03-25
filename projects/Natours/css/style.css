@@ -124,7 +124,7 @@ body {
   max-width: 114rem;
   background-color: #eee;
   margin: 0 auto;
-  /** 2 */
+  /** 2 cols */
   /** 3 */
   /** 4 */ }
   .row:not(:last-child) {
@@ -138,6 +138,8 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+  .row .col-1-of-1 {
+    width: 100%; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-2-of-2 {
