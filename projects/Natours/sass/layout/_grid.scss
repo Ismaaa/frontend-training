@@ -18,4 +18,15 @@
       margin-right: $gutter-horizontal;
     }
   }
+
+  .col-1-of-3 {
+    // We decrease 2 times the gutter, as there are 2 spaces
+    width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+    background-color: orangered;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
 }
