@@ -86,13 +86,15 @@
     box-decoration-break: clone;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, rgba($color-danger-light, .85), rgba($color-danger-dark, .85));
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-danger-light, 0.85),
+        rgba($color-danger-dark, 0.85)
+      );
     }
     &--2 {
-
     }
     &--3 {
-
     }
   }
 
@@ -107,11 +109,36 @@
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem;
-        
+
         &:not(:last-child) {
           border-bottom: 1px solid $color-light-gray;
         }
       }
     }
+  }
+
+  // Back side styling
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    margin-bottom: 8rem;
+    color: $color-white;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
