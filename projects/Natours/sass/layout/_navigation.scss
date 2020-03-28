@@ -49,14 +49,35 @@
     }
 
     &__item {
-      margin: 2rem;
+        margin: 2rem;
     }
 
     &__link {
-      font-size: 3rem;
-      font-weight: 300;
-      color: $color-white;
-      text-decoration: none;
-      text-transform: uppercase;
+      transition: all 0.4s;
+
+      &:link,
+      &:visited {
+        display: block;
+        font-size: 3rem;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            120deg,
+            transparent 0%,
+            transparent 50%,
+            $color-white 50%
+        );
+        background-size: 250%;
+      }
+
+      &:hover,
+      &:active {
+        background-position: 100%;
+        color: $color-primary-dark;
+        transform: translateX(1rem);
+      }
     }
 }
