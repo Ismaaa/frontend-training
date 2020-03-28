@@ -32,6 +32,7 @@
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all 0.5s;
+    backface-visibility: hidden; // Fix small movement when the transition ends
   }
 
   &__text {
@@ -61,5 +62,6 @@
   // When the story block is hovered, we want to change the image
   &:hover &__image {
     transform: translateX(-4rem) scale(1);
+    filter: blur(3px);
   }
 }
