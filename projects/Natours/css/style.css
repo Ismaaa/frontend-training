@@ -160,10 +160,10 @@ body {
     .btn--white::after {
       background-color: white; }
   .btn--green {
-    background-color: #7ed56f;
+    background-color: #55c57a;
     color: white; }
     .btn--green::after {
-      background-color: #7ed56f; }
+      background-color: #55c57a; }
   .btn--animated {
     animation: moveInBottom 0.5s ease-in-out 0.75s;
     /* This will apply the styles from moveInBottom before the animation starts. This way the button appears after the 0.75s delay, and not before */
@@ -333,6 +333,25 @@ body {
     transform: scale(1.03) translateY(-1rem);
     box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.15); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: 1.6rem; }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: orangered;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -414,3 +433,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
