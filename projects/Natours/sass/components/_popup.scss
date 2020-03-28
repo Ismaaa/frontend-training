@@ -35,11 +35,17 @@
     }
 
     &__text {
-      font-size: 1.4rem;
-      margin-bottom: 4rem;
-
-      column-count: 2;
-      column-gap: 4rem;
-      column-rule: 1px solid $color-light-gray;
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid $color-light-gray;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        hyphens: auto;
     }
 }

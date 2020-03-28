@@ -460,9 +460,16 @@ body {
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
     column-count: 2;
     column-gap: 4rem;
-    column-rule: 1px solid #eee; }
+    column-rule: 1px solid #eee;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    hyphens: auto; }
 
 .story {
   width: 75%;
