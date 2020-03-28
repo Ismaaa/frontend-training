@@ -218,6 +218,8 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    /** Fix for Safari */
+    -webkit-backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
@@ -595,7 +597,8 @@ body {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#55c57a, #28b485);
-  z-index: 1000; }
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .navigation__nav {
   height: 100vh;
@@ -604,7 +607,8 @@ body {
   left: 0;
   z-index: 1500;
   opacity: 0;
-  width: 0; }
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
   position: absolute;
@@ -612,7 +616,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  width: 20%; }
 
 .navigation__item {
   margin: 2rem; }
@@ -638,7 +643,7 @@ body {
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(200); }
+  transform: scale(130); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;

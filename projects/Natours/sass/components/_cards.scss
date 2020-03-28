@@ -14,6 +14,8 @@
         width: 100%;
         // This will hide the backpart when rotating
         backface-visibility: hidden;
+        /** Fix for Safari */
+        -webkit-backface-visibility: hidden;
         border-radius: $border-radius-small;
         // So the image doesn't oeverflow the box. THis way it will keep the border radius from the div
         overflow: hidden;
