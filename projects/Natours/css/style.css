@@ -616,22 +616,25 @@ body {
 .navigation__item {
   margin: 2rem; }
 
-.navigation__link {
+.navigation__link:link, .navigation__link:visited {
+  display: block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 250%;
   transition: all 0.4s; }
-  .navigation__link:link, .navigation__link:visited {
-    display: block;
-    font-size: 3rem;
-    font-weight: 300;
-    padding: 1rem 2rem;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-    background-size: 250%; }
-  .navigation__link:hover, .navigation__link:active {
-    background-position: 100%;
-    color: #28b485;
-    transform: translateX(1rem); }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #28b485;
+  transform: translateX(1rem); }
 
 .section-about {
   background-color: #f7f7f7;
