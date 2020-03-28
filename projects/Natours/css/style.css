@@ -102,22 +102,22 @@ body {
     margin-bottom: 3rem; }
 
 .text-center {
-  text-align: center; }
+  text-align: center !important; }
 
 .margin-bottom-small {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
 
 .margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .margin-top-big {
-  margin-top: 8rem; }
+  margin-top: 8rem !important; }
 
 .margin-top-huge {
-  margin-top: 10rem; }
+  margin-top: 10rem !important; }
 
 .bg-video {
   position: absolute;
@@ -134,25 +134,27 @@ body {
     object-fit: cover; }
 
 .btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  /* So the ::after starts here */
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
   /** COLORS */
   /** ANIMATIONS */ }
-  .btn:link, .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    /* So the ::after starts here */
-    position: relative;
-    font-size: 1.6rem; }
   .btn:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
-  .btn:active {
+  .btn:active, .btnfocus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn::after {
@@ -174,10 +176,10 @@ body {
     .btn--white::after {
       background-color: white; }
   .btn--green {
-    background-color: #55c57a;
+    background-color: #28b485;
     color: white; }
     .btn--green::after {
-      background-color: #55c57a; }
+      background-color: #28b485; }
   .btn--animated {
     animation: moveInBottom 0.5s ease-in-out 0.75s;
     /* This will apply the styles from moveInBottom before the animation starts. This way the button appears after the 0.75s delay, and not before */

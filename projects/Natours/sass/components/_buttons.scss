@@ -1,16 +1,17 @@
 .btn {
-    &:link,
-    &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.5rem 4rem;
-        display: inline-block;
-        border-radius: 10rem;
-        transition: all 0.2s;
-        /* So the ::after starts here */
-        position: relative;
-        font-size: $default-font-size;
-    }
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    /* So the ::after starts here */
+    position: relative;
+    font-size: $default-font-size;
+
+    // Changes for the <button> element
+    border: none;
+    cursor: pointer;
 
     &:hover {
         transform: translateY(-0.3rem);
@@ -22,7 +23,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &focus {
+        outline: none;
         transform: translateY(-0.1rem);
         box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     }
@@ -53,11 +56,11 @@
     }
 
     &--green {
-        background-color: $color-primary-light;
+        background-color: $color-primary-dark;
         color: $color-white;
 
         &::after {
-            background-color: $color-primary-light;
+            background-color: $color-primary-dark;
         }
     }
 
