@@ -14,7 +14,7 @@
     width: 100%;
     // This will hide the backpart when rotating
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: $border-radius-small;
     // So the image doesn't oeverflow the box. THis way it will keep the border radius from the div
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
