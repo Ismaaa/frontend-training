@@ -9,12 +9,13 @@
 
 html {
     /**
-  * The default font size on most browsers is 16px.
-  * To respect users font preference we have to use percentages.
-  * In this case, we want to use 10px as base
-  * o, to get the percentage we should do 10/16 which is = to 0.625
-  */
-    font-size: 62.5%; // This defined what 1 rem is - 0.625*10
+    * The default font size on most browsers is 16px.
+    * To respect users font preference we have to use percentages.
+    * In this case, we want to use 10px as base
+    * o, to get the percentage we should do 10/16 which is = to 0.625
+    */
+    // This defines what 1 rem is - 0.625*10
+    font-size: 62.5%;
 }
 
 body {
