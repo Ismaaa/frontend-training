@@ -13,7 +13,7 @@
     &__content {
         // This mixin already uses a transform property
         @include absoluteCenter;
-        width: 75%;
+        width: 85%;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
         border-radius: 3px;
@@ -24,11 +24,35 @@
         transform: translate(-50%, -50%) scale(0.25);
         // The 0.2 is a delay
         transition: all 0.4s 0.2s;
+
+        @include respond(tablet-landscape) {
+            width: 95%;
+        }
     }
 
     &__left {
         width: 33.3333333%;
+        height: 100%;
         display: table-cell;
+
+        &-picture-1 {
+            width: 100%;
+            height: 48vh;
+            background: url("../img/nat-9.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        &-picture-2 {
+            width: 100%;
+            height: 48vh;
+            background: url("../img/nat-9.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @include respond(tablet-portrait) {
+            display: none;
+        }
     }
 
     &__right {
@@ -36,6 +60,11 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tablet-portrait) {
+            width: 100%;
+            display: block;
+        }
     }
 
     &__img {
@@ -55,7 +84,19 @@
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
-        hyphens: auto;
+
+        @include respond(tablet-landscape) {
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+            column-count: 1;
+            column-gap: normal;
+            column-rule: none;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+
+        }
     }
 
     /** Popup initial state */

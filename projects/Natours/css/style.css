@@ -565,7 +565,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 85%;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -574,14 +574,37 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.4s 0.2s; }
+    @media (max-width: 75em) {
+      .popup__content {
+        width: 95%; } }
   .popup__left {
     width: 33.3333333%;
+    height: 100%;
     display: table-cell; }
+    .popup__left-picture-1 {
+      width: 100%;
+      height: 48vh;
+      background: url("../img/nat-9.jpg");
+      background-size: cover;
+      background-position: center; }
+    .popup__left-picture-2 {
+      width: 100%;
+      height: 48vh;
+      background: url("../img/nat-9.jpg");
+      background-size: cover;
+      background-position: center; }
+    @media (max-width: 56.26em) {
+      .popup__left {
+        display: none; } }
   .popup__right {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.26em) {
+      .popup__right {
+        width: 100%;
+        display: block; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -596,8 +619,18 @@ body {
     column-rule: 1px solid #eee;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
-    hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 75em) {
+      .popup__text {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        column-count: 1;
+        column-gap: normal;
+        column-rule: none;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
