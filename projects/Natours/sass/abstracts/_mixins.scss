@@ -29,6 +29,9 @@
 * - tablet-landscape
 * - big-desktop
 
+// ORDER WHEN MAKING A WEB RESPONSIVE:
+// Base + typography, then general layout + grid, then pages + components
+
 It's always better to use em in media queries.
 As rem will not be affected by our root font-size, and it will always use 16px as base,
 instead of 10px, which is the value that we've set.
