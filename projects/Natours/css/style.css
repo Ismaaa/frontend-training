@@ -414,6 +414,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.3s; }
+  @media (max-width: 56.26em) {
+    .feature-box {
+      padding: 2rem; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: 0.6rem;
@@ -424,6 +427,9 @@ body {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text; }
+    @media (max-width: 56.26em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
   .feature-box:hover {
     transform: scale(1.03) translateY(-1.5rem); }
   .feature-box:active {
@@ -904,7 +910,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.26em) {
     .section-features {
-      padding: 15rem 0; } }
+      padding: 14rem 0 10rem; } }
 
 .section-tours {
   background-color: #f7f7f7;
