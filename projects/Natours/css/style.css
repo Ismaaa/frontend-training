@@ -62,7 +62,17 @@ html {
     * In this case, we want to use 10px as base
     * o, to get the percentage we should do 10/16 which is = to 0.625
     */
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /** Larger breakpoints always go first !!! The last found is the one used */ }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.26em) {
+    html {
+      font-size: 50%; } }
 
 body {
   /* So border are not being added to the total width or height */

@@ -14,8 +14,27 @@ html {
     * In this case, we want to use 10px as base
     * o, to get the percentage we should do 10/16 which is = to 0.625
     */
-    // This defines what 1 rem is - 0.625*10
-    font-size: 62.5%;
+    // This defines what 1 rem is - 10px / 16px = 62.5%
+    font-size: 62.5%; // 1rem = 10px
+
+    // We also want the size to be 50% on phones.
+    // The tablet-portrait is "up to 900", which means 
+    // that phones will also go inside that media query 
+    // and that we don't need to put the phone respond here
+
+    /** Larger breakpoints always go first !!! The last found is the one used */
+
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12px. 12px / 16px = 75%
+    }
+
+    @include respond(tablet-landscape) {
+        font-size: 56.25%; // 1rem = 9px. 9px / 16px = 56.25%
+    }
+
+    @include respond(tablet-portrait) {
+        font-size: 50%; // 1rem = 8px. 8px / 16px = 50%
+    }
 }
 
 body {
