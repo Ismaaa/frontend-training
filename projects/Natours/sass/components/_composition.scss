@@ -1,6 +1,10 @@
 .composition {
     position: relative;
 
+    @include respond(tablet-portrait) {
+        top: 3rem;
+    }
+
     &__photo {
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
@@ -10,17 +14,43 @@
         transition: all 0.2s;
         outline-offset: 2rem;
 
+        @include respond(tablet-portrait) {
+            float: left;
+            position: relative;
+            width: 33.33%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+        }
+
         &--photo-1 {
             top: -2rem;
             left: 0;
+
+            @include respond(tablet-portrait) {
+                top: 0;
+                transform: scale(1.3);
+            }
         }
+
         &--photo-2 {
             top: 2rem;
             right: 0;
+
+            @include respond(tablet-portrait) {
+                top: 5rem;
+                transform: scale(1.3);
+                z-index: 100;
+            }
         }
+
         &--photo-3 {
             top: 10rem;
             left: 20%;
+
+            @include respond(tablet-portrait) {
+                top: 0;
+                left: 0;
+                transform: scale(1.3);
+            }
         }
 
         &:hover {
