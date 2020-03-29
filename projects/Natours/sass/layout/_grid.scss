@@ -2,8 +2,16 @@
     max-width: $grid-width;
     margin: 0 auto;
 
+    @include respond(tablet-portrait) {
+        max-width: 50rem;
+    }
+
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include respond(tablet-portrait) {
+            margin-bottom: $gutter-vertical-small;
+        }
     }
 
     @include clearfix;
@@ -13,6 +21,16 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tablet-portrait) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include respond(tablet-portrait) {
+            // We set the important to make sure that overwrite the col-x-y classes
+            width: 100% !important;
         }
     }
 
