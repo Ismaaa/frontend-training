@@ -82,7 +82,7 @@
                 transparent 65%
             ),
             url("../img/nat-10.jpg");
-            background-size: cover;
+        background-size: cover;
     }
 
     @include respond(tablet-portrait) {
@@ -92,7 +92,7 @@
                 rgba($color-white, 0.9) 100%
             ),
             url("../img/nat-10.jpg");
-            background-size: cover;
+        background-size: cover;
     }
 
     &__form {
