@@ -18,8 +18,8 @@ html {
     font-size: 62.5%; // 1rem = 10px
 
     // We also want the size to be 50% on phones.
-    // The tablet-portrait is "up to 900", which means 
-    // that phones will also go inside that media query 
+    // The tablet-portrait is "up to 900", which means
+    // that phones will also go inside that media query
     // and that we don't need to put the phone respond here
 
     /** Larger breakpoints always go first !!! The last found is the one used */

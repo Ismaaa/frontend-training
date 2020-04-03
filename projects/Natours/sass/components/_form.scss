@@ -70,7 +70,7 @@
     }
 
     &__radio-input {
-      display: none;
+        display: none;
     }
 
     &__radio-label {
@@ -93,7 +93,7 @@
         top: -0.4rem;
 
         &::after {
-            content: "";
+            content: '';
             display: block;
             height: 1.3rem;
             width: 1.3rem;
@@ -109,6 +109,6 @@
     }
 
     &__radio-input:checked ~ &__radio-label &__radio-button::after {
-      opacity: 1;
+        opacity: 1;
     }
 }
