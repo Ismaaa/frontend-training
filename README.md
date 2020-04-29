@@ -10,6 +10,8 @@
   :eyes: [Vist project demo](https://natours.ismaaa.me)
 </h2>
 
+<!-- TODO: Add used technologies -->
+
 
 #### Folder
 :file_folder: `projects/Natours`
