@@ -21,17 +21,7 @@
     // High res + bigger than 600px
     //  We do that because the small img is 1200px, so even in 2x screens it would be fine
     //  as 600x2 = 1200
-    @media (min-resolution: 192dpi) and (min-width: 600px) {
-        background-image: linear-gradient(
-                to right bottom,
-                rgba($color-primary-light, 0.8),
-                /* SCSS transforms the HEX into rgba */
-                    rgba($color-primary-dark, 0.8)
-            ),
-            url('../img/hero.jpg');
-    }
-
-    @media (min-width: 2000px) {
+    @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) { // The comma is like an OR
         background-image: linear-gradient(
                 to right bottom,
                 rgba($color-primary-light, 0.8),
