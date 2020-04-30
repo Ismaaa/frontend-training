@@ -1,5 +1,5 @@
 .header {
-    height: 95vh;
+    height: 85vh;
     background-image: linear-gradient(
             to right bottom,
             rgba($color-primary-light, 0.8),
@@ -13,8 +13,12 @@
 
     position: relative;
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    // I've added 0 0 because it can be anything, as long as it works
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        height: 95vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    }
 
     // Here we use the apple retina dpi screen as a reference.
     // Load big img when the resolution is higher than 192dpi.
