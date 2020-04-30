@@ -6,7 +6,7 @@
             /* SCSS transforms the HEX into rgba */
                 rgba($color-primary-dark, 0.8)
         ),
-        url('../img/hero.jpg');
+        url('../img/hero-small.jpg');
     background-size: cover;
     /* So top stays the same */
     background-position: top;
@@ -15,6 +15,18 @@
 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    // Here we use the apple retina dpi screen as a reference
+    // Load big img when the resolution is higher than 192dpi
+    @media (min-resolution: 192dpi) {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.8),
+                /* SCSS transforms the HEX into rgba */
+                    rgba($color-primary-dark, 0.8)
+            ),
+            url('../img/hero.jpg');
+    }
 
     @include respond(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
