@@ -112,21 +112,30 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img
-                                src="img/nat-1-large.jpg"
+
+                            <!-- Specify width descriptors in srcset -->
+                            <!-- In sizes we must specify the APROXIMATE width in vw -->
+                            <img 
+                                src="img/nat-1-large.jpg" 
+                                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                                 alt="Photo 1"
                                 class="composition__photo composition__photo--photo-1"
-                            />
-                            <img
-                                src="img/nat-2-large.jpg"
+                            >
+                            <img 
+                                src="img/nat-2-large.jpg" 
+                                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 2000w"
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                                 alt="Photo 2"
                                 class="composition__photo composition__photo--photo-2"
-                            />
-                            <img
-                                src="img/nat-3-large.jpg"
+                            >
+                            <img 
+                                src="img/nat-3-large.jpg" 
+                                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 3000w"
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                                 alt="Photo 3"
                                 class="composition__photo composition__photo--photo-3"
-                            />
+                            >
                         </div>
                     </div>
                 </div>
@@ -529,6 +538,7 @@
                         media="(max-width: 37.5em)"
                     >
                     <img
+                        src="img/logo-green-2x.png 2x"
                         srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
                         alt="Full logo"
                         class="footer__logo"
