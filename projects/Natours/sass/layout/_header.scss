@@ -16,9 +16,12 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-    // Here we use the apple retina dpi screen as a reference
-    // Load big img when the resolution is higher than 192dpi
-    @media (min-resolution: 192dpi) {
+    // Here we use the apple retina dpi screen as a reference.
+    // Load big img when the resolution is higher than 192dpi.
+    // High res + bigger than 600px
+    //  We do that because the small img is 1200px, so even in 2x screens it would be fine
+    //  as 600x2 = 1200
+    @media (min-resolution: 192dpi) and (min-width: 600px) {
         background-image: linear-gradient(
                 to right bottom,
                 rgba($color-primary-light, 0.8),
