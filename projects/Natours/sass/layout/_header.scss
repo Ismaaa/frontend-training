@@ -21,7 +21,9 @@
     // High res + bigger than 600px
     //  We do that because the small img is 1200px, so even in 2x screens it would be fine
     //  as 600x2 = 1200
-    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) { // The comma is like an OR
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em),
+            (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), // Safari
+            (min-width: 125em) { // The comma is like an OR
         background-image: linear-gradient(
                 to right bottom,
                 rgba($color-primary-light, 0.8),
