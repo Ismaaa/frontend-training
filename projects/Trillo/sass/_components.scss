@@ -143,9 +143,9 @@
         background-color: var(--color-primary);
         transform: scaleY(0); // Initial state
         // Transition of 0.2s
-        transition: transform 0.2s,
-                    width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, // Animate width: 0.2s with cubic bezier animation and 0.2s of delay
-                    background-color 0.1s; // Background color animated with 0.1s
+        transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+            // Animate width: 0.2s with cubic bezier animation and 0.2s of delay
+                background-color 0.1s; // Background color animated with 0.1s
     }
 
     &__item:hover::before,
@@ -156,7 +156,7 @@
 
     &__item:active::before {
         background-color: var(--color-primary-light);
-    } 
+    }
 
     &__link:link,
     &__link:visited {
@@ -190,4 +190,16 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+}
+
+/////////////////////////////////
+// GALLERY
+.gallery {
+    display: flex;
+
+    &__photo {
+        // Images should always have a % width, so they are responsive. And they should also be blocks or inline-blocks
+        width: 100%;
+        display: block;
+    }
 }
