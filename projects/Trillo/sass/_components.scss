@@ -67,7 +67,26 @@
 // USER NAV
 .user-nav {
     background-color: greenyellow;
+    align-self: stretch; // So it occupies the 100% of the height
+
+    // Flex container
+    display: flex;
+
+    // All direct childs. Just the first level
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    // Smae but on hover
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
+
     &__icon-box {
+
     }
 
     &__icon {
