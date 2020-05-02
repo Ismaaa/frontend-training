@@ -280,6 +280,7 @@
 
     &__location {
         margin-right: 0.5rem;
+        display: flex;
     }
 
     &__rating {
@@ -296,6 +297,10 @@
 
         @media only screen and(max-width: $breakpoint-small) {
             padding: 0 1.5rem;
+        }
+
+        @media only screen and(max-width: $breakpoint-smallest) {
+            margin-left: 1rem;
         }
     }
 
