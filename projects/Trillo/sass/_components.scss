@@ -14,6 +14,12 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and(max-width: $breakpoint-smallest) {
+        order: 1; // Last position
+        flex: 0 0 100%; // Full width
+        background-color: var(--color-grey-light-2);
+    }
+
     &__input {
         // input don't inherit some things by default
         font-family: inherit;
@@ -31,6 +37,10 @@
             outline: none;
             width: 100%;
             background-color: var(--color-grey-light-3);
+
+            @media only screen and(max-width: $breakpoint-smallest) {
+                background-color: var(--color-grey-light-2);
+            }
         }
 
         &::-webkit-input-placeholder {
