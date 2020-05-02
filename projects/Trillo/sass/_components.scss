@@ -125,11 +125,21 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and(max-width: $breakpoint-medium) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
+        flex: 1;
 
         &:not(:last-child) {
             margin-bottom: 0.5rem;
+
+            @media only screen and(max-width: $breakpoint-medium) {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -172,9 +182,6 @@
         align-items: center;
     }
 
-    &__link:hover {
-    }
-
     &__icon {
         width: 1.75rem;
         height: 1.75rem;
@@ -190,6 +197,10 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+
+    @media only screen and(max-width: $breakpoint-medium) {
+        display: none;
+    }
 }
 
 /////////////////////////////////
@@ -363,12 +374,6 @@
     justify-content: space-between;
     align-items: center;
 
-    &__count {
-    }
-
-    &__friends {
-    }
-
     &__photo {
         box-sizing: content-box; // So its the width or height + border, and the image doesn't get smaller
         height: 4rem;
@@ -498,10 +503,10 @@
 
     &:hover {
         background-image: linear-gradient(
-        to left,
-        var(--color-primary-light),
-        var(--color-primary-dark)
-    );
+            to left,
+            var(--color-primary-light),
+            var(--color-primary-dark)
+        );
     }
 
     &:hover &__visible {
