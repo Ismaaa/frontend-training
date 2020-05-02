@@ -260,6 +260,7 @@
         text-transform: uppercase;
     }
 }
+
 /////////////////////////////////
 // BUTTON INLINE
 .btn-inline {
@@ -278,7 +279,7 @@
         transition: margin-left 0.2s;
     }
 
-    &:hover { 
+    &:hover {
         color: var(--color-grey-dark-1);
 
         span {
@@ -441,5 +442,77 @@
         color: var(--color-grey-light-2);
         font-family: sans-serif;
         z-index: 1;
+    }
+}
+
+/////////////////////////////////
+// CALL TO ACTION
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+}
+
+/////////////////////////////////
+// BUTTON
+.btn {
+    position: relative;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-image: linear-gradient(
+        to right,
+        var(--color-primary-light),
+        var(--color-primary-dark)
+    );
+    color: var(--color-white);
+    cursor: pointer;
+    overflow: hidden; // So we don't show the invisible part
+
+    & > * {
+        display: inline-block;
+        height: 100%; // parent's height and witdh
+        width: 100%;
+        // It's always better to specify the transitions, so we don't have weird things going on on load
+        transition: top 0.2s, transform 0.2s;
+    }
+
+    &__visible {
+        padding: 2rem 7.5rem;
+    }
+
+    &__invisible {
+        position: absolute;
+        padding: 2rem; // no X pading, so it doesn't get pushed to the bottom
+        left: 0;
+        top: -100%; // This way it moves to the top for the exact same size as it occupies
+    }
+
+    &:hover {
+        background-image: linear-gradient(
+        to left,
+        var(--color-primary-light),
+        var(--color-primary-dark)
+    );
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+    &:hover &__invisible {
+        top: 0;
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
     }
 }
