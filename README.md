@@ -12,11 +12,11 @@ All projects are built and served with Netlify
   :eyes: [Vist project demo](https://natours.ismaaa.me)
 </h2>
 
-<!-- TODO: Add used technologies -->
-
-
 #### Folder
 :file_folder: `projects/Natours`
+
+#### Deployments
+https://app.netlify.com/sites/natours-ismaaa/deploys
 
 ---
 <h2 align="center">
@@ -29,8 +29,8 @@ All projects are built and served with Netlify
   :eyes: [Vist project demo](https://trillo.ismaaa.me)
 </h2>
 
-<!-- TODO: Add used technologies -->
-
-
 #### Folder
 :file_folder: `projects/Trillo`
+
+#### Deployments
+https://app.netlify.com/sites/trillo-ismaaa/deploys
