@@ -25,7 +25,7 @@
         border-radius: 100px;
         width: 90%;
         margin-right: -3.25rem;
-        transition: all 0.2s;
+        transition: width 0.2s;
 
         &:focus {
             outline: none;
@@ -191,6 +191,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            padding: 1.5rem 0.5rem;
         }
     }
 
@@ -202,6 +203,9 @@
 
         @media only screen and(max-width: $breakpoint-small) {
             margin-right: 0;
+            margin-bottom: 0.7rem;
+            width: 1.5rem;
+            height: 1.5rem;
         }
     }
 }
@@ -245,6 +249,11 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media only screen and(max-width: $breakpoint-small) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
     }
 
     &__stars {
@@ -274,17 +283,29 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        @media only screen and(max-width: $breakpoint-small) {
+            padding: 0 1.5rem;
+        }
     }
 
     &__rating-average {
         font-size: 2.25rem;
         font-weight: 300;
         margin-bottom: -3px;
+
+        @media only screen and(max-width: $breakpoint-small) {
+            font-size: 1.8rem;
+        }
     }
 
     &__rating-count {
         font-size: 0.8rem;
         text-transform: uppercase;
+
+        @media only screen and(max-width: $breakpoint-small) {
+            font-size: 0.5rem;
+        }
     }
 }
 
@@ -432,7 +453,6 @@
         display: flex;
         align-items: center;
     }
-
 
     &__photo {
         height: 4.5rem;
