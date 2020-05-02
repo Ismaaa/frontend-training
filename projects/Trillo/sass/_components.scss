@@ -354,11 +354,9 @@
     align-items: center;
 
     &__count {
-
     }
 
     &__friends {
-        
     }
 
     &__photo {
@@ -371,5 +369,68 @@
         &:not(:last-of-type) {
             margin-right: -2rem;
         }
+    }
+}
+
+/////////////////////////////////
+// REVIEWS
+.review {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+
+    &__text {
+        margin-bottom: 2rem;
+        z-index: 10; // We always need to set a position
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+    }
+
+    &__user-box {
+        margin-right: auto;
+    }
+
+    &__user-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 0.4rem;
+    }
+
+    &__user-date {
+        font-size: 1rem;
+        color: var(--color-grey-dark-3);
+    }
+
+    &__rating {
+        font-size: 2.2rem;
+        font-weight: 300; // Smaller weight to compensate the size
+        color: var(--color-primary);
+    }
+
+    &::before {
+        content: '\201C';
+        position: absolute;
+        top: -2.75rem;
+        left: -1rem;
+        line-height: 1; // This line is very important
+        font-size: 20rem;
+        color: var(--color-grey-light-2);
+        font-family: sans-serif;
+        z-index: 1;
     }
 }
