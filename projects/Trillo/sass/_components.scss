@@ -132,7 +132,7 @@
 
     &__item {
         position: relative;
-        flex: 1;
+        flex: 1; // So all items occupy the same and use the whole width
 
         &:not(:last-child) {
             margin-bottom: 0.5rem;
@@ -180,6 +180,11 @@
 
         display: flex;
         align-items: center;
+
+        @media only screen and(max-width: $breakpoint-medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
     }
 
     &__icon {
@@ -395,6 +400,11 @@
     padding: 3rem;
     margin-bottom: 3.5rem;
     position: relative;
+
+    @media only screen and(max-width: $breakpoint-medium) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
 
     &__text {
         margin-bottom: 2rem;
