@@ -1,7 +1,7 @@
 # Trillo
 
 <h2 align="center">
-  <img width="350" src="../../../frontend-training/.github/trillo.png" alt="Icon" src="https://trillo.ismaaa.me" />
+  <img width="350" src="../../.github/trillo.png" alt="Icon" src="https://trillo.ismaaa.me" />
 
   :eyes: [Vist project demo](https://trillo.ismaaa.me)
 </h2>

@@ -1,7 +1,7 @@
 # Natours
 
 <h2 align="center">
-  <img width="350" src="../../../frontend-training/.github/natours.png" alt="Icon" src="https://natours.ismaaa.me" />
+  <img width="350" src="../../.github/natours.png" alt="Icon" src="https://natours.ismaaa.me" />
 
   :eyes: [Vist project demo](https://natours.ismaaa.me)
 </h2>
