@@ -345,3 +345,31 @@
 
 /////////////////////////////////
 // RECOMMEND
+.recommend {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__count {
+
+    }
+
+    &__friends {
+        
+    }
+
+    &__photo {
+        box-sizing: content-box; // So its the width or height + border, and the image doesn't get smaller
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid white;
+
+        &:not(:last-of-type) {
+            margin-right: -2rem;
+        }
+    }
+}
