@@ -407,15 +407,20 @@
         margin-right: 0.7rem;
 
         // Older browsers, icons without color
-        // background-image: url(../img/chevron-thin-right.svg);
-        // background-size: cover;
+        background-image: url(../img/chevron-thin-right.svg);
+        background-size: cover;    
 
         // Newer browsers
-        background-color: var(--color-primary);
-        mask-image: url(../img/chevron-thin-right.svg);
-        -webkit-mask-image: url(../img/chevron-thin-right.svg);
-        mask-size: cover;
-        -webkit-mask-size: cover;
+        @supports (mask-image: url()) or (-webkit-mask-image: url()) {
+            background-color: var(--color-primary);
+            mask-image: url(../img/chevron-thin-right.svg);
+            -webkit-mask-image: url(../img/chevron-thin-right.svg);
+            mask-size: cover;
+            -webkit-mask-size: cover;
+
+            // clean background image
+            background-image: none;
+        }
     }
 }
 
