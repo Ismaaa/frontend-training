@@ -379,6 +379,10 @@
     justify-content: space-between;
     align-items: center;
 
+    &__friends {
+        display: flex;
+    }
+
     &__photo {
         box-sizing: content-box; // So its the width or height + border, and the image doesn't get smaller
         height: 4rem;
@@ -417,6 +421,7 @@
         display: flex;
         align-items: center;
     }
+
 
     &__photo {
         height: 4.5rem;
