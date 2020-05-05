@@ -1,6 +1,11 @@
 .priceBox {
   display: flex;
   flex-direction: column;
+  box-shadow: $box-shadow;
+
+  background-color: $white;
+  border-radius: 8px;
+  overflow: hidden;
 
   &__title {
     &--primary {
@@ -12,6 +17,11 @@
     &--secondary {
       color: $secondary;
     }
+  }
+
+  &__main, &__left, &__right {
+    padding: 2.5rem;
+
   }
 
   &__main {
@@ -26,12 +36,12 @@
   }
 
   &__left {
-    flex: 0 0 50%;
+    flex: 1;
     background-color: $primary;
   }
 
   &__right {
     flex: 1;
-    background-color: $secondary;
+    background-color: $light-primary;
   }
 }
