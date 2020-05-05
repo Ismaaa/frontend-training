@@ -11,12 +11,14 @@
     &--primary {
       color: $primary;
     }
+    margin-bottom: 2rem;
   }
 
   &__subtitle {
     &--secondary {
       color: $secondary;
     }
+    margin-bottom: 1rem;
   }
 
   &__main, &__left, &__right {
