@@ -1,8 +1,9 @@
 .priceBox {
   display: flex;
   flex-direction: column;
-  box-shadow: $box-shadow;
+  width: 640px;
 
+  box-shadow: $box-shadow;
   background-color: $white;
   border-radius: 8px;
   overflow: hidden;
@@ -64,6 +65,7 @@
   &__access {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+    font-size: 0.9rem;
   }
 
   &__price {
