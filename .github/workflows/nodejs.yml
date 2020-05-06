@@ -1,0 +1,39 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        
+    - name: Build Natours
+      working-directory: projects/Natours
+      run: |
+        yarn
+        yarn build:prod
+
+    - name: Build Trillo
+      working-directory: projects/Trillo
+      run: |
+        yarn
+        yarn build:prod        
+
+    - name: Build single price grid component
+      working-directory: components/single-price-grid
+      run: |
+        yarn
+        yarn build:prod
+        
+        
+        
