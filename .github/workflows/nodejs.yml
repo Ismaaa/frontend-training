@@ -18,22 +18,27 @@ jobs:
         node-version: ${{ matrix.node-version }}
         
     - name: Build Natours
-      working-directory: /projects/Natours
+      working-directory: projects/Natours
       run: |
         yarn
         yarn build:prod
+      continue-on-error: true
 
     - name: Build Trillo
-      working-directory: /projects/Trillo
-      run: |
-        yarn
-        yarn build:prod        
-
-    - name: Build single price grid component
-      working-directory: /components/single-price-grid
+      working-directory: projects/Trillo
       run: |
         yarn
         yarn build:prod
+      continue-on-error: true
+
+    - name: Build single price grid component
+      working-directory: components/single-price-grid
+      run: |
+        yarn
+        yarn build:prod
+      continue-on-error: true
+
+        
         
         
         
