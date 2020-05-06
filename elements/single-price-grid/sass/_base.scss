@@ -14,9 +14,14 @@ body {
 }
 
 .container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 35vw;
+  margin: 20vh 30vw;
+  @media only screen and(max-width: $desktop) {
+    margin: 20vh 20vw;
+  }
+  @media only screen and(max-width: $tablet) {
+    margin: 20vh 10vw;
+  }
+  @media only screen and(max-width: $phone) {
+    margin: 20vh 10vw;
+  }
 }
