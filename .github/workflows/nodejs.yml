@@ -22,21 +22,18 @@ jobs:
       run: |
         yarn
         yarn build:prod
-      continue-on-error: true
 
     - name: Build Trillo
       working-directory: projects/Trillo
       run: |
         yarn
         yarn build:prod
-      continue-on-error: true
 
     - name: Build single price grid component
       working-directory: components/single-price-grid
       run: |
         yarn
         yarn build:prod
-      continue-on-error: true
 
         
         
