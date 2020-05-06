@@ -1,4 +1,4 @@
-All projects are built and served with Netlify
+All projects and components are built and served with Netlify
 
 # Projects
 
@@ -34,3 +34,21 @@ https://app.netlify.com/sites/natours-ismaaa/deploys
 
 #### Deployments
 https://app.netlify.com/sites/trillo-ismaaa/deploys
+
+# Components
+
+<h2 align="center">
+  Single Price Grid
+</h2>
+
+<h2 align="center">
+  <img width="350" src="./.github/single-price-grid.png" alt="Icon" src="https://natours.ismaaa.me" />
+
+  :eyes: [Vist component demo](https://fm-single-price-grid.ismaaa.me)]
+</h2>
+
+#### Folder
+:file_folder: `components/single-price-grid`
+
+#### Deployments
+https://app.netlify.com/sites/fm-single-price-grid/deploys
