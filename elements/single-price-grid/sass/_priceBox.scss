@@ -11,23 +11,28 @@
     &--primary {
       color: $primary;
     }
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
   }
 
   &__subtitle {
     &--secondary {
       color: $secondary;
     }
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
   }
 
-  &__main, &__left, &__right {
-    padding: 2.5rem;
+  &__main-text {
+    line-height: 1.6rem;
+  }
 
+  &__main,
+  &__left,
+  &__right {
+    padding: 2.5rem;
   }
 
   &__main {
-    color: $gray-blue;
+    color: $gray;
     font-weight: 700;
   }
 
@@ -45,5 +50,29 @@
   &__right {
     flex: 1;
     background-color: $light-primary;
+  }
+
+  &__price-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__access {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__price {
+    display: inline-block;
+  }
+
+  &__per-month {
+    margin-left: 1rem;
+    color: $lighter-gray;
+  }
+
+  &__why-text {
+    color: $lighter-gray;
+    padding-right: 3rem;
   }
 }
