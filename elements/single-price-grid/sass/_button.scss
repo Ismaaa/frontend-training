@@ -1,0 +1,22 @@
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.button-box {
+  display: flex;
+}
+
+.button {
+  display: block;
+  padding: 1rem 2.5rem;
+  color: $white;
+  width: 80%;
+  border-radius: 0.5rem;
+
+  &--secondary {
+    background-color: $secondary;
+  }
+}
