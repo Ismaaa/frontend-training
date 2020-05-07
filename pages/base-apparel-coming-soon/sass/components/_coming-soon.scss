@@ -1,4 +1,23 @@
 .coming-soon {
   flex: 1;
-  background-color: red;
+  background-image: url(../../images/bg-pattern-desktop.svg);
+
+  padding: 5rem 12rem;
+
+  &__logo {
+    margin-bottom: 8rem;
+  }
+
+  &__title {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 7rem;
+    letter-spacing: 2rem;
+    // color: $desaturated-red;
+
+    &--red {
+      font-weight: 300;
+      color: $desaturated-red;      
+    }
+  }
 }
