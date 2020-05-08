@@ -1,9 +1,4 @@
 .coming-soon {
-  flex: 1;
-  background-image: url(../../images/bg-pattern-desktop.svg);
-
-  padding: 5rem 25rem 0 12rem;
-
   &__logo {
     margin-bottom: 8rem;
   }
@@ -11,7 +6,7 @@
   &__title {
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 5rem;
     letter-spacing: 2rem;
 
     &--red {
@@ -21,14 +16,14 @@
   }
 
   &__text {
-    margin-top: 2rem;
+    margin: 2rem;
     color: $desaturated-red;
     font-weight: 600;
     word-spacing: 0.2rem;
   }
 
   &__form {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 
   &__input {
