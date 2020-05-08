@@ -1,5 +1,6 @@
 .hero {
   background-image: url(../../images/hero-desktop.jpg);
-  width: 610px;
-  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
 }
