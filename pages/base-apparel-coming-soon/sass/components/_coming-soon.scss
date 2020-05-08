@@ -1,4 +1,9 @@
 .coming-soon {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5rem;
+
   &__logo {
     margin-bottom: 8rem;
   }
@@ -6,7 +11,7 @@
   &__title {
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: 2rem;
 
     &--red {
@@ -23,12 +28,25 @@
   }
 
   &__form {
+    display: flex;
+    flex-direction: column;
     margin-top: 1rem;
+    width: 70%;
   }
 
   &__input {
     border: none;
     padding: 1rem 2rem;
     width: 100%;
+    border: 1px solid $desaturated-red;
+    border-radius: 100px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $desaturated-red;
+    }
   }
 }
