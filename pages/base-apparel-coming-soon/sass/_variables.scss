@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: 'Josefin Sans', sans-serif;
+$base-font-family: "Josefin Sans", sans-serif;
 $default-font-size: 1rem;
 
 // COLORS
@@ -8,16 +8,12 @@ $soft-red: hsl(0, 93%, 68%);
 
 $dark-grayish-red: hsl(0, 6%, 24%);
 
-$white-gradient: linea-gradient(
+$white-gradient: linear-gradient(
   135deg,
   from hsl(0, 0%, 100%),
   to hsl(0, 100%, 98%)
 );
-$red-gradient: linea-gradient(
-  135deg,
-  from hsl(0, 80%, 86%),
-  to hsl(0, 74%, 74%)
-);
 
+$red-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 // BREAKPOINTS
 $phone: 23.4rem;
