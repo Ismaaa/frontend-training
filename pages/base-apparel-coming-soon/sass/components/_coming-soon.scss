@@ -6,7 +6,7 @@
   margin-right: 10rem;
 
   &__logo {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
   }
 
   &__title {
@@ -52,6 +52,7 @@
   }
 
   &__button {
+    cursor: pointer;
     position: absolute;
     background-image: url(../../images/icon-arrow.svg);
     background-repeat: no-repeat;
