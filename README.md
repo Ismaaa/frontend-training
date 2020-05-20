@@ -7,9 +7,9 @@ All projects and components are built and served with Netlify
 </h2>
 
 <h2 align="center">
-  <img width="350" src="./.github/natours.png" alt="Icon" src="https://natours.ismaaa.me" />
+  <img width="350" src="./.github/natours.png" alt="Icon" src="https://lp-natours.ismaaa.me" />
 
-  :eyes: [Vist project demo](https://natours.ismaaa.me)
+  :eyes: [Vist project demo](https://lp-natours.ismaaa.me)
 </h2>
 
 #### Folder
@@ -42,7 +42,7 @@ https://app.netlify.com/sites/trillo-ismaaa/deploys
 </h2>
 
 <h2 align="center">
-  <img width="350" src="./.github/single-price-grid.png" alt="Icon" src="https://natours.ismaaa.me" />
+  <img width="350" src="./.github/single-price-grid.png" alt="Icon" src="https://lp-natours.ismaaa.me" />
 
   :eyes: [Vist component demo](https://fm-single-price-grid.ismaaa.me)]
 </h2>
