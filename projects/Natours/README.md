@@ -10,11 +10,13 @@
 
 ```
 yarn
+build:prod
 yarn start
 ```
 or
 ```
 npm i
+npm run build:prod
 npm run start
 ```
 
